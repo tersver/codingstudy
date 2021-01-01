@@ -30,26 +30,18 @@ mislav는 참여자 명단에는 두 명이 있지만, 완주자 명단에는 �
 
 function solution(participant, completion) {
     let result = [];
-
-       for (let i in participant) 
-    {
-         result[participant[i]] = 0;
+    for (let i in participant) {
+    	result[participant[i]] = 0;
     }
-       for (let i in participant) 
-    {
-         result[participant[i]]++;
+    for (let i in participant) {
+    	result[participant[i]]++;
     }
-
-       for (let i in completion) 
-    {
-         result[completion[i]]--;
+	for (let i in completion) {
+        result[completion[i]]--;
     }
-
-    for (let i in result)
-    {
-        if (result[i]>0) 
-        {
-            return i;
-        }
+	for (let i in result){
+	    if (result[i]>0) {
+	        return i;
+	    }
     }
 }
