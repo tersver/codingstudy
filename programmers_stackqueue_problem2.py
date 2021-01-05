@@ -49,7 +49,6 @@ def solution(progresses, speeds):
 		count=1
 		day = days.pop(0)
 		if len(days)>0:
-			print(len(days))
 			while day>=days[0]:
 				days.pop(0)
 				count=count+1
